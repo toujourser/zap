@@ -1,4 +1,4 @@
-module go.uber.org/zap/tools
+module github.com/toujourser/zap/tools
 
 require golang.org/x/vuln v1.1.3
 
