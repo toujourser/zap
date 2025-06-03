@@ -13,7 +13,7 @@ Blazing fast, structured, leveled logging in Go.
 
 ## Installation
 
-`go get -u go.uber.org/zap`
+`go get -u github.com/toujourser/zap`
 
 Note that zap only supports the two most recent minor versions of Go.
 

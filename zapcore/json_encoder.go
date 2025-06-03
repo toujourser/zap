@@ -26,9 +26,9 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"go.uber.org/zap/buffer"
-	"go.uber.org/zap/internal/bufferpool"
-	"go.uber.org/zap/internal/pool"
+	"github.com/toujourser/zap/buffer"
+	"github.com/toujourser/zap/internal/bufferpool"
+	"github.com/toujourser/zap/internal/pool"
 )
 
 // For JSON-escaping; see jsonEncoder.safeAddString below.
@@ -409,13 +409,13 @@ func (enc *jsonEncoder) EncodeEntry(ent Entry, fields []Field) (*buffer.Buffer, 
 			final.AppendString(ent.Caller.Function)
 		}
 	}
-	if final.MessageKey != "" {
-		final.addKey(enc.MessageKey)
-		final.AppendString(ent.Message)
-	}
 	if enc.buf.Len() > 0 {
 		final.addElementSeparator()
 		final.buf.Write(enc.buf.Bytes())
+	}
+	if final.MessageKey != "" {
+		final.addKey(enc.MessageKey)
+		final.AppendString(ent.Message)
 	}
 	addFields(final, fields)
 	final.closeOpenNamespaces()

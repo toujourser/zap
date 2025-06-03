@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	//revive:disable:dot-imports
-	. "go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zaptest/observer"
+	. "github.com/toujourser/zap/zapcore"
+	"github.com/toujourser/zap/zaptest/observer"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

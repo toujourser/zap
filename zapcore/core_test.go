@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"go.uber.org/zap/internal/ztest"
+	"github.com/toujourser/zap/internal/ztest"
 	//revive:disable:dot-imports
-	. "go.uber.org/zap/zapcore"
+	. "github.com/toujourser/zap/zapcore"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -25,8 +25,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zaptest/observer"
+	"github.com/toujourser/zap/zapcore"
+	"github.com/toujourser/zap/zaptest/observer"
 )
 
 type proxyCore struct {

@@ -26,11 +26,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.uber.org/zap"
+	"github.com/toujourser/zap"
 
 	//revive:disable:dot-imports
-	. "go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zaptest/observer"
+	. "github.com/toujourser/zap/zapcore"
+	"github.com/toujourser/zap/zaptest/observer"
 )
 
 func TestIncreaseLevel(t *testing.T) {

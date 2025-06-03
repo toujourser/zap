@@ -31,8 +31,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/toujourser/zap/zapcore"
 	"go.uber.org/multierr"
-	"go.uber.org/zap/zapcore"
 )
 
 func TestOpenNoPaths(t *testing.T) {

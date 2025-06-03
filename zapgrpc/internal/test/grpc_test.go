@@ -25,10 +25,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.uber.org/zap"
-	"go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zapgrpc"
-	"go.uber.org/zap/zaptest/observer"
+	"github.com/toujourser/zap"
+	"github.com/toujourser/zap/zapcore"
+	"github.com/toujourser/zap/zapgrpc"
+	"github.com/toujourser/zap/zaptest/observer"
 	"google.golang.org/grpc/grpclog"
 )
 
